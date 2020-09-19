@@ -1,0 +1,15 @@
+@import '../abstract/global.scss';
+
+.hero {
+    height: 100vh;
+    // width: auto;
+    // background: url('../../assets/trueHero.jpg') center/cover no-repeat;
+    &__image {
+        width: 100%;
+    }
+}
+.learn {
+ height: 40vh;
+ bottom: 0;
+   background: black;
+}

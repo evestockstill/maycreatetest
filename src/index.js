@@ -5,4 +5,4 @@ import App from './components/App/App';
 render(
   <App />,
   document.getElementById('root')
-);
+)
