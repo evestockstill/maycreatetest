@@ -1,8 +1,50 @@
 @import '../abstract/global.scss';
-.hand {
+
+.events-section {
+    // height: 100vh;
+background: $blue;
+&__title {
+    color: $yellow;
+    text-align: center;
+    font-size: 5em;
+    padding: 5rem 1rem 3rem 1rem;
+    text-transform: uppercase;
+}
+.ticket-container {
+  
+  justify-content: center;
+        padding: 1rem;
+        &__ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-gap: 2rem;
+
+            & li {
+                list-style: none;
+                cursor: pointer;
+                & .figure {
+                    max-height: 60rem;
+                    overflow: hidden;
+                    position: relative;
+                    & img {
+                     width: 100%;
+                    }
+                }
+            }
+        }
+    }
+.hands {
+
+    & img {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
     background: $yellow;
-    height: 4.5em;
-    width: 4.5em;
+
+        height: 5rem;
+        width: 5rem;
     border-radius: 100%;
-    // transform: translateX(-10px)
+
+    }
+}
 }

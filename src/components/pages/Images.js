@@ -18,7 +18,7 @@ const Images = () => {
           <h1>End of the Line.</h1>
         </div>
 
-        <article>
+        <article className='article'>
           Known as the "End of the Line," Brushy Mountain State Penitentiary was
           the last place you wanted to be sent to. <br />
           Brushy was a maximum-security prison that held murders, robbers,
@@ -27,50 +27,53 @@ const Images = () => {
           to explore its history.{' '}
         </article>
         <div className='img-container'>
-          <ul>
+          <ul className='img-container__ul'>
             <li>
-              <img src={visit} />
+              <figure className='figure'>
+                <img src={visit} alt='take a tour' />
+              </figure>
             </li>
             <li>
-              <img src={shop} />
+              <figure className='figure'>
+                <img src={shop} alt='shop photo' />
+              </figure>
             </li>
             <li>
-              <img src={tours} />
+              <figure className='figure'>
+                <img src={tours} alt='our tours' />
+              </figure>
             </li>
             <li>
-              {' '}
-              <img src={table} />
+              <figure className='figure'>
+                <img src={table} alt='warrens table'/>
+              </figure>
             </li>
           </ul>
         </div>
         <div className='info-container'>
-          <ul>
-            <li>
-              <h3>
-                Tours & museum Hours <br />
-                <span>
+          
+              <h3 className='info-title'>
+                Tours & museum <br />Hours 
+                <p>
                   10:30a - 6:30p <span className='bullet'>.</span> 7 Days <br />{' '}
                   (Last tickets sold at 5p)
-                </span>
+                </p>
               </h3>
-            </li>
-            <li>
-              <h3>
-                Gift Shop Hours <br />
-                <span>
+           
+              <h3 className='info-title'>
+                Gift Shop Hours 
+                <p>
                   10:30a - 8p <span className='bullet'>.</span> 7 Days{' '}
-                </span>
+                </p>
               </h3>
-            </li>
-            <li>
-              <h3>
-                Warden's Table <br />
-                <span>
+           
+              <h3 className='info-title'>
+                Warden's Table 
+                <p>
                   11:00a - 8p <span className='bullet'>.</span> 7 Days{' '}
-                </span>
+                </p>
               </h3>
-            </li>
-          </ul>
+          
         </div>
       </main>
     </>

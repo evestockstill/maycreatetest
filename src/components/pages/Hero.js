@@ -10,11 +10,11 @@ const Hero = () => {
   return (
     <>
       <header className='header'>
-        <div className="nav-main">
+        {/* <div className="nav-main"> */}
 
        
         {/* <div className='header__logo-box'> */}
-        <div className="nav-closed">
+        {/* <div className="nav-closed">
           <div className="nav-left open">
           <div className='hamburger'>
             <img src={square} className='square'/>
@@ -28,7 +28,7 @@ const Hero = () => {
 
             </div>
           </div>
-        </div>
+        </div> */}
        
 
         <div className='header__text-box'>
@@ -44,7 +44,7 @@ const Hero = () => {
             </span>
           </h1>
         </div>
-        </div>
+        {/* </div> */}
       </header>
     </>
   );
