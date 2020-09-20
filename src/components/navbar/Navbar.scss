@@ -2,24 +2,23 @@
 
 nav {
     
-    height: 5vh;
+    height: 2.9vh;
     background: $yellow;
-    // padding-top: 1rem;
    
 
      ul {
          
          display: flex;
          justify-content: space-around;
-         padding-top: 1rem;
+         padding-top: .5rem;
         
         li {
            
             font-size: 1.8rem;
             list-style: none;
             text-transform: uppercase;
-            font-family: Drone Ranger 01; 
-            font-weight: 700;
+           letter-spacing: .04em;
+           font-weight: bolder;
          
            
         }

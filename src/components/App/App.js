@@ -17,8 +17,8 @@ export default function App() {
         {/* <Router> */}
           <Navbar />
           <Hero />
-          <Events />
           <Images />
+          <Events />
           <Footer />
 
           {/* <Route exact path='/' component={MainPage} /> */}

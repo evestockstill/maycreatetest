@@ -1,15 +1,120 @@
 @import '../abstract/global.scss';
 
-.hero {
-    height: 100vh;
-    // width: auto;
-    // background: url('../../assets/trueHero.jpg') center/cover no-repeat;
-    &__image {
-        width: 100%;
+.header {
+ 
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba($blackShadow, 0), rgba($blackShadow, 0),  rgba($blackShadow, 0.5), rgba(0, 0, 0, 0.7), ($black)),
+    url(../../assets/trueHero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  
+  
+
+  &__logo-box {
+    // position: absolute;
+    // top: 4rem;
+    // left: 4rem;
+    // background: $yellow;
+    // padding: 1rem;
+  }
+  
+
+  &__logo {
+    height: 5rem;
+    background: $blue;
+  
+  }
+
+  &__text-box {
+    
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.heading {
+  & h1 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-top: 4.5rem;
+  color: $white;
+  font-size: 2.3em;
+  letter-spacing: .1em;
+  }
+  &__logo {
+   
+    &--main {
+      height: 23rem;
+    }
+  }
+    &__sub {
+      color: $yellow;
+      padding-top: 15rem;
+      font-size: 2.1rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+     
+    }
+  }
+.hamburger {
+  display: inline-flex;
+  // -webkit-box-orient: horizontal;
+  // -webkit-box-direction: normal;
+
+  flex-direction: row;
+  position: fixed;
+  // z-index: 999;
+  box-shadow: 0px 2px 4px #000;
+// width: 20%;
+background: $yellow;
+//   align-items: center;
+//   justify-content: space-around;
+//   background: $yellow;
+//   height: 5rem;
+//   width: 8rem;
+//   margin-top: 2rem;
+// }
+//   .square {
+// height: 2rem;
+// width: 2rem;
+//   }
+//   .menu {
+//     // display: inline-block;
+//     // background: $yellow;
+
+  }
+ .square {
+   height: 3rem;
+   width: 3rem;
+ }
+  .nav-closed .nav-left {
+   
+    display: flex;
+    align-items: center;
+    background: #ffc843;
+    // padding: 0px 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease;
+    & p {
+      line-height: 1;
+text-transform: uppercase;
+margin-left: .5em;
+margin-bottom: -2px;
+color: #224359;
     }
 }
-.learn {
- height: 40vh;
- bottom: 0;
-   background: black;
+.nav-closed .nav-right {
+    background: #224359;
+    width: 8%;
+    // text-align: right;
+}
+.arrow {
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 5rem;
+  margin-top: .5rem;
 }

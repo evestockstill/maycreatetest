@@ -1,0 +1,40 @@
+@import '../abstract/global.scss';
+main {
+    max-height: 100vh;
+    background: url('../../assets/Paper-Background.png');
+.title {
+
+   text-align: center;
+    color: $blue;
+    font-family: VoltaT ;
+    line-height: 1;
+    & h3{
+      padding-top: 6rem;  
+      font-size: 4.7em;
+    }
+    & h1 {
+font-size: 5.7em;
+padding-bottom: 1rem;
+    }
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+& img {
+  height: auto;
+  width: 22rem;
+   display: grid;
+  grid-template-rows: auto;
+  grid-gap: .5rem;
+  margin: .5rem 0;
+}
+  & ul {
+//   display: grid;
+//   grid-template-rows: auto;
+//   grid-gap: .5rem;
+//   margin: .5rem 0;
+}
+}
+}
