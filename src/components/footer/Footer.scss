@@ -1,10 +1,10 @@
 @import '../abstract/global.scss';
 
 footer {
-  height: 65vh;
+  height: 75vh;
   background: $greenFooter;
   @include respond(phone) {
-      height: 63vh;
+      height: 70vh;
   }
 }
 .main-footer {
@@ -15,9 +15,6 @@ footer {
     padding: 2rem;
 }
   }
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   &__logo {
     height: 20rem;
     width: 18rem;
@@ -65,10 +62,8 @@ footer {
       color: white;
       padding: 0 0.4rem;
     }
-    // text-align: center;
   }
   &__info {
-    // padding: 0 50rem;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -87,9 +82,6 @@ footer {
   border: 2px solid $eventTitle;
 }
 .circa{
-//  display: flex;
-//     justify-content: space-around;
-//     text-align: center;
     padding: 1.5rem;
     text-align: center;
     line-height: 2;
@@ -115,9 +107,6 @@ footer {
       width: 3rem;
       margin: .5rem;
   }
-}
-.info-wrapper {
- 
 }
 .bullet {
     font-size: 2rem;

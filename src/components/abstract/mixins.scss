@@ -26,28 +26,9 @@
     @media(min-width: 112.5em) { @content }; //1800 +
   }
 }
-
-// $font: 'Alegreya Sans SC', sans-serif;
-// $weight: 700;
-// $transform: translate(-50%, -50%);
-// $absolute: absolute;
-// $background: linear-gradient(to right, $orange2, $orange1); 
-// $webclip: text;
-// $clip:  text;
-// $space: .2rem;
-// $height: 1;
-// $color: transparent;
-
-// @mixin text-color ($size){
-//   font-family: $font;
-//   font-size: $size;
-//   weight: $weight;
-//   transform: $transform;
-//   position: $absolute;
-//   background: $background;
-//    background-clip: $clip;
-//    letter-spacing: $space;
-//    -webkit-background-clip: $webclip;
-//    color: $color;
-//    line-height: $height;
-// }
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

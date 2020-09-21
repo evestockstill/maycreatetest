@@ -6,6 +6,8 @@ import bill from '../../assets/bill2.png';
 import bel from '../../assets/car.jpg';
 import buy from '../../assets/buy.svg';
 import cal from '../../assets/cal.svg';
+import one from '../../assets/cell.png';
+import two from '../../assets/blackwhite.jpg';
 import './Events.scss';
 
 const Events = () => {
@@ -19,7 +21,7 @@ const Events = () => {
   };
   return (
     <>
-      <section className='events-section'>
+      <section className='events-section' id='events'>
         <div className='hands-left'>
           <img src={handLeft} className='left' />
         </div>
@@ -35,10 +37,12 @@ const Events = () => {
                   <h4>fri, apr 12, 2019 8:00 pm</h4>
                 </figcaption>
               </figure>
-              <button className='ticket-btn'>
-                <img src={buy} className='buy' />
-                Buy tickets
-              </button>
+              <a href='#popup'>
+                <button className='ticket-btn'>
+                  <img src={buy} className='buy' />
+                  Buy tickets
+                </button>
+              </a>
             </li>
             <li>
               <figure className='figure'>
@@ -48,10 +52,13 @@ const Events = () => {
                   <h4>sat-sun, may 25-26, 10 - 5 </h4>
                 </figcaption>
               </figure>
-              <button className='ticket-btn'>
-                <img src={buy} className='buy' />
-                Buy tickets
-              </button>
+              <a href='#popup'>
+                <button className='ticket-btn'>
+                  {' '}
+                  <img src={buy} className='buy' />
+                  Buy tickets
+                </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -67,6 +74,25 @@ const Events = () => {
           <img src={handRight} className='right' />
         </div>
       </section>
+
+      <div className='popup' id='popup'>
+        <div className='popup__content'>
+          <div className='popup__left'>
+            <img src={one} alt='' className='popup__img' />
+            <img src={two} alt='' className='popup__img' />
+          </div>
+          <div className='popup__right'>
+            <a href='#' className='popup__close'>
+              &times;
+            </a>
+            <h2 className='pop-title'>Events</h2>
+           
+            <button onSubmit className='submit-btn'>
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
