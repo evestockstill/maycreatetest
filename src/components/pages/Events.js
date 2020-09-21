@@ -20,12 +20,10 @@ const Events = () => {
   return (
     <>
       <section className='events-section'>
-        <h1 className='events-section__title'>upcoming events</h1>
-        {/* <div className='hands'>
+        <div className='hands-left'>
           <img src={handLeft} className='left' />
-
-          <img src={handRight} className='right' />
-        </div> */}
+        </div>
+        <h1 className='events-section__title'>upcoming events</h1>
 
         <div className='ticket-container'>
           <ul className='ticket-container__ul'>
@@ -60,18 +58,14 @@ const Events = () => {
         <div className='cal'>
           <button className='ticket-btn cal-left'>
             <img src={cal} className='buy' />
-           events calendar
+            events calendar
           </button>
-          <button className='ticket-btn'>
-           host an event at brushy
-          </button>
+          <button className='ticket-btn'>host an event at brushy</button>
         </div>
 
-        {/* <div className='hands'>
-          <img src={handLeft} className='left' />
-
+        <div className='hands-right'>
           <img src={handRight} className='right' />
-        </div> */}
+        </div>
       </section>
     </>
   );

@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.scss';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+library.add(fab);
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-// import { fab } from '@fortawesome/free-brands-svg-icons';
 import Navbar from '../navbar/Navbar';
 import Hero from '../pages/Hero';
 import Events from '../pages/Events';
@@ -21,7 +23,7 @@ export default function App() {
           <Images />
           <Events />
           <Weather />
-          {/* <Footer /> */}
+          <Footer />
 
           {/* <Route exact path='/' component={MainPage} /> */}
          

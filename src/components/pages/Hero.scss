@@ -16,6 +16,9 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  @include respond(phone) {
+    height: 90vh;
+  }
   &__logo-box {
     display: flex;
     justify-content: space-around;
@@ -37,7 +40,7 @@
       cursor: pointer;
       transition: all 1s ease;
       &:hover {
-        background: cyan;
+        background: $hover;
       }
       .menu {
         padding: 1.4rem;
@@ -55,10 +58,13 @@
 
   &__text-box {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    @include respond(phone) {
+      top: 57%
+    }
   }
 }
 .heading {
@@ -67,25 +73,37 @@
     white-space: nowrap;
     padding-top: 4.5rem;
     color: $white;
-    font-size: 2.4em;
+    font-size: 5rem;
     letter-spacing: 0.1em;
     @include respond(tab-port) {
       white-space: normal;
+      @include respond(phone) {
+          padding-top: 1.5rem;
+          font-size: 3.5rem;
+
+      }
     }
   }
-  &__logo {
-    &--main {
-      height: 27rem;
+}
+  .main {
+    height: 27rem;
+          @include respond(phone) {
+            height: 17rem;
+            width: 15rem;
+          }
     }
-  }
-  &__sub {
+  
+  .sub {
     color: $yellow;
-    padding-top: 13rem;
+    padding-top: 7rem;
     font-size: 2.3rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    @include respond(phone) {
+      padding-top: 5rem;
+    }
   }
-}
+
 
 .square {
   height: 3rem;

@@ -19,13 +19,13 @@ const Hero = () => {
         </div>
         <div className='header__text-box'>
           <h1 className='heading'>
-            <span className='heading__logo'>
-              <img src={logo} className='heading__logo--main'></img>
+            <span className='logo'>
+              <img src={logo} className='main'></img>
               <h1>Come visit the prison that ate america's sins.</h1>
             </span>
 
             <span>
-              <div className='heading__sub'>Learn More</div>
+              <div className='sub'>Learn More</div>
               <img src={arrow} className='arrow' />
             </span>
           </h1>
