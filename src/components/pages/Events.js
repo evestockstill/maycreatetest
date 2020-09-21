@@ -8,6 +8,7 @@ import buy from '../../assets/buy.svg';
 import cal from '../../assets/cal.svg';
 import one from '../../assets/cell.png';
 import two from '../../assets/blackwhite.jpg';
+import Form from '../form/Form';
 import './Events.scss';
 
 const Events = () => {
@@ -76,22 +77,27 @@ const Events = () => {
       </section>
 
       <div className='popup' id='popup'>
-        <div className='popup__content'>
-          <div className='popup__left'>
-            <img src={one} alt='' className='popup__img' />
-            <img src={two} alt='' className='popup__img' />
-          </div>
+        <Form />
+        <a href='#' className='popup__close'>
+          &times;
+        </a>
+        {/* <div className='popup__content'>
+          <div className='popup__left'> 
+             <img src={one} alt='' className='popup__img' />
+            <img src={two} alt='' className='popup__img' /> 
+           </div>
           <div className='popup__right'>
             <a href='#' className='popup__close'>
               &times;
             </a>
             <h2 className='pop-title'>Events</h2>
-           
-            <button onSubmit className='submit-btn'>
-              Submit
-            </button>
           </div>
-        </div>
+            <div className='submit'>
+              <button onSubmit className='submit-btn'>
+                Submit
+              </button>
+            </div>
+        </div> */}
       </div>
     </>
   );

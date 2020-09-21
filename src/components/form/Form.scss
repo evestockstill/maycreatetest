@@ -1,0 +1,200 @@
+@import '../abstract/global.scss';
+
+
+
+.heading {
+  font-size: 5.5rem;
+  padding-bottom: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: $eventTitle;
+}
+.section-signup {
+  height: auto;
+  width: 75%;
+  margin: 3rem auto;
+
+}
+.signup {
+  background: linear-gradient(
+      110deg,
+      rgba($blue, 1) 5%,
+      rgba($blue, .8) 20%,
+      rgba($blue, .7) 30%,
+      rgba($blue, .5) 50%,
+      rgba($blue, .3) 60%,
+      rgba($blue, .3) 70%,
+      rgba($blue, .3) 80%,
+      rgba($blue, .3) 100%,
+      transparent 50%
+    ),
+    url('../../assets/form.jpg')center/cover;
+  padding: 7rem 0rem;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+  &__form {
+    width: 50%;
+    padding: 1rem 1rem 1rem 6rem;
+    @include respond(phone) {
+      padding: 3rem 1rem;
+    }
+  }
+}
+.form {
+  display: grid;
+  @include respond(phone) {
+  }
+  &__group:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  &__input {
+    font-size: 2rem;
+    font-family: Proxima Nova;
+
+    padding: 0.7rem 1.7rem;
+    background: transparent;
+    background: rgba($blue, 0.3);
+    border: 2px solid $yellow;
+    width: 87%;
+    display: block;
+    transition: all 0.3s;
+    &:hover {
+         border: 2px solid $eventTitle;
+
+    }
+    @include respond(big-desktop) {
+      width: 39rem;
+    }
+    @include respond(tab-port-big) {
+      width: 34rem;
+    }
+    @include respond(tab-port) {
+      width: 30rem;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($black, 0.1);
+      border-bottom: 3px solid $hover;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+    &::-webkit-input-placeholder {
+      color: $eventTitle;
+    }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    font-family: Proxima Nova;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+    color: $eventTitle;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+  &__select {
+    display: block;
+    font-size: 2rem;
+       font-family: Proxima Nova;
+
+    font-weight: 400;
+    color: $eventTitle;
+    border: 2px solid $black;
+    border: 2px solid $yellow;
+    line-height: 1.3;
+    padding: 1rem 1.5rem;
+    width: 87%;
+    height: 4.5rem;
+    max-width: 100%;
+    border: 2px, 2px, 0, 2px $black;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba($blue, .2);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23424242%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 1.5em auto, 100%;
+    @include respond(big-desktop) {
+      max-width: 100%;
+    }
+    @include respond(tab-port-big) {
+      width: 100%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+   
+
+    &:-ms-expand {
+      display: none;
+    }
+    &:hover {
+      border-color: $eventTitle;
+    }
+    &:focus {
+      outline: none;
+      color: $eventTitle;
+      box-shadow: 0 1rem 2rem rgba($black, 0.1);
+      border-bottom: 3px solid $eventTitle;
+    }
+  }
+}
+
+.select option {
+  font-weight: normal;
+  &:hover {
+  }
+}
+.submit {
+//   background: $eventTitle;
+background: rgba($eventTitle, 0.7);
+  font-size: 2.5rem;
+       font-family: Proxima Nova;
+
+  border: none;
+  padding: 1rem;
+  box-shadow: 1px 1px 1px 0px $black;
+  padding: .5rem 2rem;
+  
+}
+.input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $blue;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $blue;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $blue;
+  opacity: 1;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $blue;
+  opacity: 1;
+}
+.thanks {
+    font-size: 2.2rem;
+      font-family: Proxima Nova;
+    letter-spacing: .1em;
+    padding-bottom: 2rem;
+    width: 100%;
+    color: $white;
+}

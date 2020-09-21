@@ -67,8 +67,8 @@
     }
   }
 }
-.heading {
-  & h1 {
+.heading-hero {
+  .hero-title {
     text-transform: uppercase;
     white-space: nowrap;
     padding-top: 4.5rem;

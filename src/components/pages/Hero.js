@@ -18,10 +18,10 @@ const Hero = () => {
           </button>
         </div>
         <div className='header__text-box'>
-          <h1 className='heading'>
+          <h1 className='heading-hero'>
             <span className='logo'>
               <img src={logo} className='main'></img>
-              <h1>Come visit the prison that ate america's sins.</h1>
+              <h1 className='hero-title'>Come visit the prison that ate america's sins.</h1>
             </span>
 
             <span>
