@@ -1,0 +1,26 @@
+@import '../abstract/global.scss';
+
+nav {
+    
+    height: 4.1vh;
+    background: $yellow;
+   
+
+     ul {
+         
+         display: flex;
+         justify-content: space-around;
+         padding-top: .9rem;
+        
+        li {
+           
+            font-size: 1.8rem;
+            list-style: none;
+            text-transform: uppercase;
+           letter-spacing: .04em;
+           font-weight: bolder;
+         
+           
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import '../abstract/global.scss';
+
+
+.hand {
+    background: $yellow;
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 100%;
+    // transform: translateX(-10px)
+}

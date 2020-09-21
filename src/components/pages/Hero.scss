@@ -1,0 +1,116 @@
+@import "../abstract/global.scss";
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($blackShadow, 0),
+      rgba($blackShadow, 0),
+      rgba($blackShadow, 0.5),
+      rgba(0, 0, 0, 0.7),
+      ($black)
+    ),
+    url(../../assets/trueHero.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  @include respond(phone) {
+    height: 90vh;
+  }
+  &__logo-box {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    .menu-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $yellow;
+      color: $blue;
+      font-family: Pink Sans;
+      font-size: 2em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+      transition: all 1s ease;
+      &:hover {
+        background: $hover;
+      }
+      .menu {
+        padding: 1.4rem;
+        font-size: 1.2em;
+      }
+      .square {
+        margin-left: 1.5rem;
+      }
+      .sm-logo {
+        background: $blue;
+        padding: 0.4rem 1rem;
+      }
+    }
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    @include respond(phone) {
+      top: 57%
+    }
+  }
+}
+.heading-hero {
+  .hero-title {
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-top: 4.5rem;
+    color: $white;
+    font-size: 5rem;
+    letter-spacing: 0.1em;
+    @include respond(tab-port) {
+      white-space: normal;
+      @include respond(phone) {
+          padding-top: 1.5rem;
+          font-size: 3.5rem;
+
+      }
+    }
+  }
+}
+  .main {
+    height: 27rem;
+          @include respond(phone) {
+            height: 17rem;
+            width: 15rem;
+          }
+    }
+  
+  .sub {
+    color: $yellow;
+    padding-top: 13rem;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    @include respond(phone) {
+      padding-top: 5rem;
+    }
+  }
+
+
+.square {
+  height: 3rem;
+  width: 3rem;
+}
+.arrow {
+  height: 4.5rem;
+  width: 4rem;
+  margin-top: 0.5rem;
+}
