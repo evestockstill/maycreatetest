@@ -20,11 +20,14 @@
             list-style: none;
             cursor: pointer;
             & .figure {
-                max-height: 36rem;
                 overflow: hidden;
                 position: relative;
                 & img {
-                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    @include respond(phone) {
+                        width: 100%;
+                    }
                 }
             }
         }

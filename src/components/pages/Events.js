@@ -6,8 +6,6 @@ import bill from '../../assets/bill2.png';
 import bel from '../../assets/car.jpg';
 import buy from '../../assets/buy.svg';
 import cal from '../../assets/cal.svg';
-import one from '../../assets/cell.png';
-import two from '../../assets/blackwhite.jpg';
 import Form from '../form/Form';
 import './Events.scss';
 

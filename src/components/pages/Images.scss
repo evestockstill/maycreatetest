@@ -40,16 +40,14 @@ main {
                 list-style: none;
                 cursor: pointer;
                 & .figure {
-                    max-height: 30rem;
                     overflow: hidden;
                     border-top-left-radius: 0.5rem;
                     border-top-right-radius: 0.5rem;
                     position: relative;
-                    @include respond(phone) {
-                        max-height: 35rem;
-                    }
+                    
                     & img {
-                        width: 100%;
+                       max-width: 100%;
+                       height: auto;
                     }
                 }
             }

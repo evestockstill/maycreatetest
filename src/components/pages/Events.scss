@@ -12,9 +12,9 @@
   &__title {
     color: $eventTitle;
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     letter-spacing: 0.06em;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     text-transform: uppercase;
     @include respond(phone) {
         font-size: 5rem;
@@ -28,19 +28,22 @@
       background: $yellow;
       color: $blue;
       font-family: Pink Sans;
-      font-size: 3.5em;
+      font-size: 3.1rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       font-weight: bold;
-      padding: 2.2rem;
+      padding: 2rem;
       cursor: pointer;
       transition: all 1s ease;
+      @include respond(phone) {
+          font-size: 2.8rem;
+      }
       &:hover {
         background: $hover;
       }
       .buy {
-        height: 4rem;
-        width: 4rem;
+        height: 3.2rem;
+        width: 3.2rem;
         margin-right: 2rem;
       }
     }
@@ -53,7 +56,7 @@
         list-style: none;
         cursor: pointer;
         .figure {
-          max-height: 45rem;
+          max-height: 40rem;
           overflow: hidden;
           position: relative;
           @include respond(tab-port) {
@@ -91,8 +94,8 @@
   .left,
   .right {
     background: $yellow;
-    height: 7rem;
-    width: 7rem;
+    height: 6.6rem;
+    width: 6.6rem;
     border-radius: 100%;
     transition: all 1s ease;
     cursor: pointer;
@@ -115,29 +118,27 @@
     background: $yellow;
     color: $blue;
     font-family: Pink Sans;
-    font-size: 3.5em;
+    font-size: 3.1rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 2.2rem;
+    padding: 2rem;
     cursor: pointer;
     transition: all 1s ease;
-
-    @include respond(tab-port) {
-      width: 50%;
-      font-size: 2.8em;
-      margin-top: 2.5rem;
-    }
+@include respond(phone) {
+          font-size: 2.8rem;
+            width: 50%;
+      }
 
     &:hover {
       background: $hover;
     }
     .buy {
-      height: 4rem;
-      width: 4rem;
+      height: 3.2rem;
+      width: 3.2rem;
       margin-right: 2rem;
       @include respond(phone) {
-        margin-right: 0.5rem;
+        margin-right: 1rem;
       }
     }
   }

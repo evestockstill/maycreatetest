@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
           <div className='info-wrapper'>
             <div className='main-footer__info'>
-              <h3 className='main-footer__info--title-1'>
+              <h3 className='white'>
                 Tours & museum Hours
                 <p>
                   10:30a - 6:30p <span className='bullet'>.</span> 7 Days <br />{' '}
@@ -78,14 +78,14 @@ const Footer = () => {
                 </p>
               </h3>
 
-              <h3 className='main-footer__info--title-2'>
+              <h3 className='white'>
                 Gift Shop
                 <p>
                   10:30a - 8p <span className='bullet'>.</span> 7 Days{' '}
                 </p>
               </h3>
 
-              <h3 className='main-footer__info--title-3'>
+              <h3 className='white'>
                 Warden's Table
                 <p>
                   11:00a - 8p <span className='bullet'>.</span> 7 Days{' '}

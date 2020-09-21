@@ -1,7 +1,7 @@
 @import '../abstract/global.scss';
 
 footer {
-  height: 75vh;
+  height: 76vh;
   background: $greenFooter;
   @include respond(phone) {
       height: 70vh;
@@ -16,8 +16,8 @@ footer {
 }
   }
   &__logo {
-    height: 20rem;
-    width: 18rem;
+    height: 22rem;
+    width: 19rem;
     margin-right: 1rem;
     @include respond(phone) {
         height: 17rem;
@@ -31,7 +31,7 @@ footer {
   &__title {
     padding: 3rem 0 1rem 3rem;
     color: $eventTitle;
-    font-size: 4.7em;
+    font-size: 5.3rem;
     font-family: Pink Sans;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -68,18 +68,20 @@ footer {
     justify-content: space-around;
     text-align: center;
     padding: 1rem;
-    color: $white;
-     font-size: 1.5rem;
+    color: $white2;
+     font-size: 1.3rem;
     font-family: Proxima Nova;
+    font-weight: 300;
     letter-spacing: 0.03em;
   }
 }
+
 .background {
   background: transparent;
-  margin: 0 1.8rem;
+  margin: 0 2rem;
   display: inline-block;
   border-radius: 100%;
-  border: 2px solid $eventTitle;
+  border: 3px solid $eventTitle;
 }
 .circa{
     padding: 1.5rem;
@@ -98,8 +100,8 @@ footer {
 #faceBook,
 #insta,
 #twitter {
-  height: 4rem;
-  width: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
   color: $eventTitle;
   margin: 1rem;
   @include respond(phone) {

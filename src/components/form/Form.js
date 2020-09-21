@@ -22,7 +22,7 @@ const Form = () => {
                   <p className='thanks'> {thanks}</p>
                 <form onSubmit={handleSubmit(onSubmit)} className='form'>
                   <div className='title'>
-                    <h2 className='heading'>Events</h2>
+                    <h2 className='f-heading'>Events</h2>
                   </div>
                   <div className='form__group'>
                     <label htmlFor='events'></label>
