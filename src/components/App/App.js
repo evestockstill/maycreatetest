@@ -7,6 +7,7 @@ import Navbar from '../navbar/Navbar';
 import Hero from '../pages/Hero';
 import Events from '../pages/Events';
 import Images from '../pages/Images';
+import Weather from '../pages/Weather';
 import Footer from '../footer/Footer';
 
 
@@ -19,7 +20,8 @@ export default function App() {
           <Hero />
           <Images />
           <Events />
-          <Footer />
+          <Weather />
+          {/* <Footer /> */}
 
           {/* <Route exact path='/' component={MainPage} /> */}
          

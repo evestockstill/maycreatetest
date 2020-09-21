@@ -1,36 +1,59 @@
-@import '../abstract/global.scss';
+@import "../abstract/global.scss";
 
 .header {
- 
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba($blackShadow, 0), rgba($blackShadow, 0),  rgba($blackShadow, 0.5), rgba(0, 0, 0, 0.7), ($black)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba($blackShadow, 0),
+      rgba($blackShadow, 0),
+      rgba($blackShadow, 0.5),
+      rgba(0, 0, 0, 0.7),
+      ($black)
+    ),
     url(../../assets/trueHero.jpg);
   background-size: cover;
   background-position: center;
- display: grid;
+  display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  // position: relative;
-  
-  
-
   &__logo-box {
-    // position: absolute;
-    // top: 4rem;
-    // left: 4rem;
-    // background: $yellow;
-    // padding: 1rem;
-  }
-  
-
-  &__logo {
-    height: 5rem;
-    background: $blue;
-  
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    .menu-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $yellow;
+      color: $blue;
+      font-family: Pink Sans;
+      font-size: 2em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+      transition: all 1s ease;
+      &:hover {
+        background: cyan;
+      }
+      .menu {
+        padding: 1.4rem;
+        font-size: 1.2em;
+      }
+      .square {
+        margin-left: 1.5rem;
+      }
+      .sm-logo {
+        background: $blue;
+        padding: 0.4rem 1rem;
+      }
+    }
   }
 
   &__text-box {
-    
     position: absolute;
     top: 60%;
     left: 50%;
@@ -40,87 +63,36 @@
 }
 .heading {
   & h1 {
-  text-transform: uppercase;
-  white-space: nowrap;
-  padding-top: 4.5rem;
-  color: $white;
-  font-size: 2.4em;
-  letter-spacing: .1em;
-  @include respond(tab-port) {
-    white-space: normal;
-  }
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-top: 4.5rem;
+    color: $white;
+    font-size: 2.4em;
+    letter-spacing: 0.1em;
+    @include respond(tab-port) {
+      white-space: normal;
+    }
   }
   &__logo {
-   
     &--main {
       height: 27rem;
     }
   }
-    &__sub {
-      color: $yellow;
-      padding-top: 13rem;
-      font-size: 2.3rem;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-     
-    }
+  &__sub {
+    color: $yellow;
+    padding-top: 13rem;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
-.hamburger {
-  display: inline-flex;
-  // -webkit-box-orient: horizontal;
-  // -webkit-box-direction: normal;
-
-  flex-direction: row;
-  position: fixed;
-  // z-index: 999;
-  box-shadow: 0px 2px 4px #000;
-// width: 20%;
-background: $yellow;
-//   align-items: center;
-//   justify-content: space-around;
-//   background: $yellow;
-//   height: 5rem;
-//   width: 8rem;
-//   margin-top: 2rem;
-// }
-//   .square {
-// height: 2rem;
-// width: 2rem;
-//   }
-//   .menu {
-//     // display: inline-block;
-//     // background: $yellow;
-
-  }
- .square {
-   height: 3rem;
-   width: 3rem;
- }
-  .nav-closed .nav-left {
-   
-    display: flex;
-    align-items: center;
-    background: #ffc843;
-    // padding: 0px 20px;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: all .3s ease;
-    & p {
-      line-height: 1;
-text-transform: uppercase;
-margin-left: .5em;
-margin-bottom: -2px;
-color: #224359;
-    }
 }
-.nav-closed .nav-right {
-    background: #224359;
-    width: 8%;
-    // text-align: right;
+
+.square {
+  height: 3rem;
+  width: 3rem;
 }
 .arrow {
   height: 4rem;
   width: 4rem;
-  // margin-bottom: 1rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }

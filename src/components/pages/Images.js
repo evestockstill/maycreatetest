@@ -61,7 +61,7 @@ const Images = () => {
               </h3>
            
               <h3 className='info-title'>
-                Gift Shop Hours 
+                Gift Shop 
                 <p>
                   10:30a - 8p <span className='bullet'>.</span> 7 Days{' '}
                 </p>

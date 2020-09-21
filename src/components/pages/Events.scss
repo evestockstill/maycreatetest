@@ -1,50 +1,152 @@
-@import '../abstract/global.scss';
+@import "../abstract/global.scss";
 
 .events-section {
-    // height: 100vh;
-background: $blue;
-&__title {
-    color: $yellow;
-    text-align: center;
-    font-size: 5em;
-    padding: 5rem 1rem 3rem 1rem;
-    text-transform: uppercase;
-}
-.ticket-container {
-  
-  justify-content: center;
-        padding: 1rem;
+    height: 100%;
+    padding: 5rem 22rem;
+    margin: 0 auto;
+    background: $blue;
+    @include respond (tab-port) {
+        padding: 2rem 8rem;
+    }
+    &__title {
+        color: $eventTitle;
+        text-align: center;
+        font-size: 6.6em;
+        letter-spacing: 0.06em;
+       padding-bottom: 5rem;
+        text-transform: uppercase;
+    }
+    .ticket-container {
+        // padding: 1rem;
+        .ticket-btn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background: $yellow;
+            color: $blue;
+            font-family: Pink Sans;
+            font-size: 3.5em;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 2.2rem;
+            cursor: pointer;
+            transition: all 1s ease;
+            &:hover {
+                background: cyan;
+            }
+            .buy {
+                height: 4rem;
+                width: 4rem;
+            margin-right: 2rem;
+            }
+        }
         &__ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            grid-gap: 2rem;
+            grid-gap: 4rem;
 
             & li {
                 list-style: none;
                 cursor: pointer;
-                & .figure {
-                    max-height: 60rem;
+                .figure {
+                    max-height: 45rem;
                     overflow: hidden;
                     position: relative;
-                    & img {
-                     width: 100%;
+                    @include respond(tab-port) {
+                        max-height: 55rem;
+                    }
+                    .event-img {
+                        width: 100%;
+                    }
+                    .figcap {
+                        position: absolute;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        width: 100%;
+                        // height: 10rem;
+                        h3,
+                        h4 {
+                            font-family: Proxima Nova;
+                            text-transform: uppercase;
+                            color: white;
+                            padding: 0 3rem;
+                            font-size: 3.25rem;
+                        }
+                        h3 {
+                            padding-top: 2rem;
+                        }
+                        h4 {
+                            font-size: 2.25em;
+                            font-weight: 400;
+                            // padding-top: 0.5rem;
+                            padding-bottom: 1rem;
+                        }
                     }
                 }
             }
         }
     }
-.hands {
-
-    & img {
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-    background: $yellow;
-
-        height: 5rem;
-        width: 5rem;
-    border-radius: 100%;
-
+    .left,
+    .right {
+        background: $yellow;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 100%;
+        transition: all 1s ease;
+        cursor: pointer;
+        &:hover {
+            background: cyan;
+        }
     }
 }
-}
+.cal {
+  display: flex;
+  justify-content: space-around;
+   @include respond (tab-port) {
+                flex-wrap: wrap;
+            }
+  .ticket-btn {
+      margin-top: 6.5rem;
+            display: flex;
+            justify-content: center;
+            width: 55%;
+            background: $yellow;
+            color: $blue;
+            font-family: Pink Sans;
+            font-size: 3.5em;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 2.2rem;
+            cursor: pointer;
+            transition: all 1s ease;
+            
+            @include respond(tab-port) {
+                width: 50%;
+                font-size: 2.8em;
+                margin-top: 2.5rem;
+            }
+           
+            &:hover {
+                background: cyan;
+            }
+            .buy {
+                height: 4rem;
+                width: 4rem;
+            margin-right: 2rem;
+            @include respond(phone) {
+                margin-right: .5rem;
+            }
+           
+            }
+            
+        }
+  }
+  .cal-left {
+                margin-right: 6rem;
+                text-align: center;
+                 @include respond(tab-port) {
+                margin: 0 auto;
+            }
+            }
