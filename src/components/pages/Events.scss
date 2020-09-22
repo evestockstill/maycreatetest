@@ -17,6 +17,9 @@
     letter-spacing: 0.06em;
     padding-bottom: 3rem;
     text-transform: uppercase;
+    @include respond(tab-port) {
+        padding-top: 3rem;
+    }
     @include respond(phone) {
         font-size: 4rem;
         padding-top: 1rem;
@@ -123,6 +126,7 @@
   justify-content: space-around;
   @include respond(tab-port) {
     flex-wrap: wrap;
+    padding-bottom: 2rem;
   }
   .ticket-btn {
     margin-top: 6.5rem;

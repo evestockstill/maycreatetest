@@ -11,6 +11,9 @@ nav {
          display: flex;
          justify-content: space-around;
          padding-top: .9rem;
+         @include respond(tab-port) {
+             padding-top: 1.5rem;
+         }
         
         li {
            

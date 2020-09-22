@@ -37,6 +37,7 @@ const Events = () => {
                 </figcaption>
               </figure>
               <a href='#popup'>
+               
                 <button className='ticket-btn'>
                   <img src={buy} className='buy' />
                   Buy tickets

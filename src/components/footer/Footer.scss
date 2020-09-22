@@ -3,6 +3,10 @@
 footer {
   height: 76vh;
   background: $greenFooter;
+
+  @include respond(tab-port) {
+      height: 73vh;
+  }
   @include respond(phone) {
       height: 70vh;
   }
