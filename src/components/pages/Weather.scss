@@ -11,6 +11,9 @@
 .liquor-container,
 .weather-container {
     padding: 3rem;
+    @include respond(phone) {
+        padding: 0rem;
+    }
     &__ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

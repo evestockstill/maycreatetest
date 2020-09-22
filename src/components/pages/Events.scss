@@ -7,7 +7,8 @@
   margin: 0 auto;
   background: $blue;
   @include respond(tab-port) {
-    padding: 5rem;
+    padding: 0rem;
+
   }
   &__title {
     color: $eventTitle;
@@ -17,7 +18,8 @@
     padding-bottom: 3rem;
     text-transform: uppercase;
     @include respond(phone) {
-        font-size: 5rem;
+        font-size: 4rem;
+        padding-top: 1rem;
     }
   }
   .ticket-container {
@@ -36,7 +38,8 @@
       cursor: pointer;
       transition: all 1s ease;
       @include respond(phone) {
-          font-size: 2.8rem;
+          font-size: 2.6rem;
+         
       }
       &:hover {
         background: $hover;
@@ -45,6 +48,9 @@
         height: 3.2rem;
         width: 3.2rem;
         margin-right: 2rem;
+        @include respond(phone) {
+            margin-right: .7rem;
+        }
       }
     }
     &__ul {
@@ -77,6 +83,10 @@
               color: white;
               padding: 0 3rem;
               font-size: 3.25rem;
+              @include respond(phone) {
+                  padding: 0 1rem;
+                  font-size: 2.7rem;
+              }
             }
             h3 {
               padding-top: 2rem;
@@ -99,6 +109,10 @@
     border-radius: 100%;
     transition: all 1s ease;
     cursor: pointer;
+    @include respond(phone) {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
     &:hover {
       background: $hover;
     }
@@ -126,7 +140,7 @@
     cursor: pointer;
     transition: all 1s ease;
 @include respond(phone) {
-          font-size: 2.8rem;
+          font-size: 1.6rem;
             width: 50%;
       }
 
@@ -138,7 +152,7 @@
       width: 3.2rem;
       margin-right: 2rem;
       @include respond(phone) {
-        margin-right: 1rem;
+        margin-right: .6rem;
       }
     }
   }
@@ -156,8 +170,8 @@
   left: 5%;
   z-index: 1000;
   @include respond(phone) {
-    top: 3%;
-    right: 3%;
+    top: 20%;
+    right: 2%;
   }
 }
 .hands-right {
@@ -165,8 +179,8 @@
   top: 45%;
   right: 5%;
   @include respond(phone) {
-    top: 3%;
-    right: 3%;
+    top: 20%;
+    right: 2%;
   }
 }
 .popup {
