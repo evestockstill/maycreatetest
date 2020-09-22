@@ -57,19 +57,22 @@
     width: 87%;
     display: block;
     transition: all 0.3s;
+    @include respond(phone) {
+        width: 95%;
+    }
     &:hover {
          border: 2px solid $eventTitle;
 
     }
-    @include respond(big-desktop) {
-      width: 39rem;
-    }
-    @include respond(tab-port-big) {
-      width: 34rem;
-    }
-    @include respond(tab-port) {
-      width: 30rem;
-    }
+    // @include respond(big-desktop) {
+    //   width: 39rem;
+    // }
+    // @include respond(tab-port-big) {
+    //   width: 34rem;
+    // }
+    // @include respond(tab-port) {
+    //   width: 30rem;
+    // }
     
     &:focus {
       outline: none;
@@ -134,6 +137,9 @@
     }
     @include respond(tab-port) {
       width: 100%;
+    }
+     @include respond(phone) {
+        width: 95%;
     }
    
 

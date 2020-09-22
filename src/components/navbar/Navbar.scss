@@ -19,6 +19,9 @@ nav {
             text-transform: uppercase;
            letter-spacing: .04em;
            font-weight: bolder;
+           @include respond (phone) {
+               display: none;
+           }
          
            
         }
